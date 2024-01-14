@@ -1,0 +1,94 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3692518588" file="/Users/michael/Desktop/240112_Routenplanung_Abgabe/Code/Smart Toll.prj" location="/Users/michael/Desktop/240112_Routenplanung_Abgabe/Code" name="Smart Toll" target="target.mlapps" target-name="Package App">
+    <param.appname>Smart Toll</param.appname>
+    <param.authnamewatermark>Michael Albrecht</param.authnamewatermark>
+    <param.email />
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>/private/var/folders/z6/0yvhpqvn3h94nj_f42d3l3xw0000gn/T/tp41d2a2dc_1976_4628_885d_27d896b0428e.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>/Users/michael/Desktop/240112_Routenplanung_Abgabe</param.output>
+    <param.guid>11d17fb1-05ed-451d-8c14-cb9b9e8c45db</param.guid>
+    <unset>
+      <param.email />
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}/France.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}/aStar.m</file>
+      <file>${PROJECT_ROOT}/aStarMiddle.m</file>
+      <file>${PROJECT_ROOT}/buildRouteShapefile.m</file>
+      <file>${PROJECT_ROOT}/calcBoundingBox.m</file>
+      <file>${PROJECT_ROOT}/calcMapLimits.m</file>
+      <file>${PROJECT_ROOT}/calcNeededTiles.m</file>
+      <file>${PROJECT_ROOT}/checkForTileSilent.m</file>
+      <file>${PROJECT_ROOT}/checkForTiles.m</file>
+      <file>${PROJECT_ROOT}/compactShapefile.m</file>
+      <file>${PROJECT_ROOT}/createTileSpecific.m</file>
+      <file>${PROJECT_ROOT}/createTiles.m</file>
+      <file>${PROJECT_ROOT}/decideHwLocal.m</file>
+      <file>${PROJECT_ROOT}/deleteUnessesary.m</file>
+      <file>${PROJECT_ROOT}/filterHighway.m</file>
+      <file>${PROJECT_ROOT}/findNearestRamp.m</file>
+      <file>${PROJECT_ROOT}/findRamps.m</file>
+      <file>${PROJECT_ROOT}/getBaseTile.m</file>
+      <file>${PROJECT_ROOT}/getLatLonAddress.m</file>
+      <file>${PROJECT_ROOT}/init.m</file>
+      <file>${PROJECT_ROOT}/lambert2latlon.m</file>
+      <file>${PROJECT_ROOT}/latLon2Lambert.m</file>
+      <file>${PROJECT_ROOT}/loadCleanShapefile.m</file>
+      <file>${PROJECT_ROOT}/main.m</file>
+      <file>${PROJECT_ROOT}/makeMainGraph.m</file>
+      <file>${PROJECT_ROOT}/p2pMatching.m</file>
+      <file>${PROJECT_ROOT}/renameItemsAttributes.m</file>
+      <file>${PROJECT_ROOT}/secBuildHwShapefile.m</file>
+      <file>${PROJECT_ROOT}/secDeleteUnessesary.m</file>
+      <file>${PROJECT_ROOT}/shapefile2latlong.m</file>
+      <file>${PROJECT_ROOT}/shapefileToAdjMatrix.m</file>
+      <file>${PROJECT_ROOT}/stichTiles.m</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="/Users/michael/Desktop" name="240112_Routenplanung_Abgabe" optional="false">/Users/michael/Desktop/240112_Routenplanung_Abgabe</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/Applications/MATLAB_R2023b.app</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>14.2.1</osver>
+      <os32>true</os32>
+      <os64>false</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
