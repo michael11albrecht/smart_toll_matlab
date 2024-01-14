@@ -1,4 +1,3 @@
-Sure, here's a draft for your README:
 
 ---
 
@@ -133,3 +132,5 @@ Please note that the addresses should be within the initialized map segment.
 
 - **lambert2LatLon:**
   - Converts Lambert93 coordinates back to latitude and longitude WGS84.
+
+---
