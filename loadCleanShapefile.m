@@ -1,5 +1,4 @@
 function shapefile = loadCleanShapefile(shapefile_path)
-%loads and cleans shapefile to needed parts only
-%   Detailed explanation goes heres
+%LOADCLEANSHAPEFILE Reads in the shapefile while filtering out empty segments
 shapefile = shaperead(shapefile_path,'Selector',{@(roadlenght)(roadlenght>=0),'LONGUEUR'});
 end

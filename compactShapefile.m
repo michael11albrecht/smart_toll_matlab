@@ -1,6 +1,7 @@
 function new_shapefile = compactShapefile(shapefile, highway_file)
-%COMPACTSHAPEFILE Summary of this function goes here
-%   Detailed explanation goes here
+%COMPACTSHAPEFILE Connects contiguous segments
+%   Keeps segments separate at intersections, local road to expressway transition,
+%   and toll to toll-free transition
     max_dist =10;
     max_dist = max_dist^2;
     count = 1;

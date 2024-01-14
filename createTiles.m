@@ -1,6 +1,6 @@
 function createTiles(shapefile,tile_size,output_path)
-%CREATE_TILES Summary of this function goes here
-%   Detailed explanation goes here
+%CREATETILES Calculates all tiles required to represent the shapefile
+%   Saves the tiles, naming them with the minimum coordinates
 y_values_min = zeros(length(shapefile(:)),1);
 y_values_max = zeros(length(shapefile(:)),1);
 x_values_min = zeros(length(shapefile(:)),1);

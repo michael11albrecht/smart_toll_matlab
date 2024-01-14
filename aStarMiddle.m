@@ -1,4 +1,5 @@
 function route = aStarMiddle(start_adjm, start_coosL, end_adjm, end_coosL, hw_adjm, hw_coosL, start_point, end_point, start_ramp, end_ramp)
+% ASTARMIDDLE Calculates three routes (start-highway-end) and connects them
     local_hw_start_point = find(start_coosL(:,3) == start_ramp(3));
     hw_hw_start_point = find(hw_coosL(:,3) == start_ramp(4));
     local_hw_end_point = find(end_coosL(:,3) == end_ramp(3));

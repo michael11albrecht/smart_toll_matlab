@@ -1,4 +1,5 @@
 function [A,L] = shapefileToAdjMatrix(shapefile, highway_file)
+%SHAPEFILETOADJMATRIX Calculates the shapefile and creates a list of coordinates from the shapefile
     %create empty arrays
     L = zeros(2*length(shapefile),2);
     A = zeros(2*length(shapefile));

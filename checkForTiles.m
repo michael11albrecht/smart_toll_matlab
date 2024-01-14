@@ -1,6 +1,5 @@
 function all_files_ok = checkForTiles(tile_list)
-%CHECKFORTILES Summary of this function goes here
-%   Detailed explanation goes here
+% CHECKFORTILES Checks if all the calculated tiles are available
 all_files_ok = true;
     for i = 1:length(tile_list(:,1))
         filename = sprintf('%d_%d.mat',tile_list(i,1),tile_list(i,2));

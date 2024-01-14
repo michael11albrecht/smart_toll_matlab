@@ -1,6 +1,5 @@
 function [lat,lon] = shapefile2latlong(shapefile)
-%SHAPEFILE2LATLONG Summary of this function goes here
-%   Detailed explanation goes here
+% SHAPEFILE2LATLON Returns all points of the shapefile segments in sequential order as lat, lon WGS84 coordinates
     x = [];
     y = [];
     for i = 1:length(shapefile(:))

@@ -1,4 +1,5 @@
 function point = p2pMatching(x, y, coos_list)
+% P2PMATCHING Searches for the closest segment to a given point
     d_min = inf;
     for i = 1:length(coos_list)
         d = sqrt((coos_list(i,1)-x)^2+(coos_list(i,2)-y)^2);

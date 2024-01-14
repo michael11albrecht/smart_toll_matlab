@@ -1,6 +1,5 @@
 function route_shapefile = buildRouteShapefile(route, start_shapefile, end_shapefile, hw_shapefile)
-%BUILD_ROUTE_SHAPEFILE Summary of this function goes here
-%   Detailed explanation goes here
+% BUILDROUTESHAPEFILE Creates a shapefile consisting of the segments needed for the route
 if exist('end_shapefile','var')
     hw_seg = [hw_shapefile(:).SegmentID];
     route_shapefile = struct();

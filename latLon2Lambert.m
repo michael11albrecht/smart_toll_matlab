@@ -1,6 +1,5 @@
 function [x,y] = latLon2Lambert(lat,lon)
-%LAT_LON_LAMBERT Summary of this function goes here
-%   Detailed explanation goes here
+%LATLON2LAMBERT Converts Lat,Lon WGS84 coordinates to Lambert 93 projection
 lambert = projcrs(2154);
 [x,y] = projfwd(lambert,lat,lon);
 end

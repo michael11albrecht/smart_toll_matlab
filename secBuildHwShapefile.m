@@ -1,6 +1,6 @@
 function hw_shapefile = secBuildHwShapefile(shapefile)
-%SECBUILDHWSHAPEFILE Summary of this function goes here
-%   Detailed explanation goes here
+%SECBUILDHWSHAPEFILE Creates a shapefile that only includes expressways
+%   Uses the processed shapefile as its base
     count = 1;
     for i = 1:length(shapefile)
         if shapefile(i).Highway

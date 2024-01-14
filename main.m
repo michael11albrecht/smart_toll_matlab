@@ -1,6 +1,6 @@
 function [lat_lon_route,map_limit,lat_lon_start_ziel] = main(start_addr, dest_addr)
-%APP_RUN_FR Summary of this function goes here
-%   Detailed explanation goes here
+%gets run by the gui, by pressing the "Calculate" button
+% returns the route as lat, lon list, start, end coords and the map limits
 
 base_tile_size = 100000;
 basepath = 'Daten';
@@ -45,6 +45,7 @@ lat_lon_start_ziel = [lat_s,lon_s,lat_d,lon_d];
 end
 
 function route_shapefile = withoutHw(xstart, ystart, xziel, yziel, basepath)
+% WITHOUTHW Calculates the route using simple A*
     %no ramps on map
     %calc_tiles
     tile_list = calcNeededTiles(xstart,ystart,xziel,yziel,10000);
@@ -69,6 +70,7 @@ function route_shapefile = withoutHw(xstart, ystart, xziel, yziel, basepath)
 end
 
 function route_shapefile = withHw(xstart, ystart, xziel, yziel, basepath, ramp_list)
+% WITHHW Calculates the route using Midpoint Heuristic A*
 %there are ramps on the map
 start_ramp = findNearestRamp(xstart,ystart,ramp_list);
 dest_ramp = findNearestRamp(xziel,yziel,ramp_list);

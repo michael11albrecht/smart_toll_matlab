@@ -1,6 +1,6 @@
 function folder_name = createTileSpecific(shapefile,tile_size,output_path,y_value,x_value)
-%CREATE_TILES Summary of this function goes here
-%   Detailed explanation goes here
+%CREATETILESPECIFIC Computes a tile (square)
+%   Saves the street segments within the square
 y_values_min = zeros(length(shapefile(:)),1);
 y_values_max = zeros(length(shapefile(:)),1);
 x_values_min = zeros(length(shapefile(:)),1);

@@ -1,4 +1,6 @@
 function ramps = findRamps(loc_coos_L,hw_coos_L)
+%FINDRAMPS Searches for all expressway ramps
+%   Returns a list with coordinates and SegmentIDs
     index = 1;
     ramps = [];
     for i = 1:length(loc_coos_L(:,1))

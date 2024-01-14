@@ -1,6 +1,5 @@
 function map_limit = calcMapLimits(xy_start, xy_dest)
-%CALCMAPLIMITS Summary of this function goes here
-%   Detailed explanation goes here
+% CALCMAPLIMITS Calculates the necessary map size, with an extension factor applied to the straight-line distance
     pct_of_dist = 0.2;
     dist_sd = sqrt((xy_start(1)-xy_dest(1))^2+(xy_start(2)-xy_dest(2))^2);
     

@@ -1,6 +1,6 @@
 function new_shapefile = renameItemsAttributes(shapefile)
-%RENAME_ITEMS_ATTRIBUTES Summary of this function goes here
-%   Detailed explanation goes here
+%RENAMEITEMATTRIBUTES Renames the remaining columns of the shapefile
+%   Introduces a SegmentID (int)
 
 old_class = {'Autoroute', 'D�partementale', 'Nationale', 'Sans objet'};
 new_class = {'A','D','N','None'};

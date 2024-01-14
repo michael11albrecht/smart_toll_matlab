@@ -1,6 +1,6 @@
 function [main_adjm,main_coosL] = makeMainGraph(adjm,coosL)
-%MAMAINGRAPH Summary of this function goes here
-%   Detailed explanation goes here
+%MAKEMAINGRAPH Searches for the largest connected graph
+%   Based on the MST - Minimum Spanning Tree algorithm
     all_graphs = zeros(length(adjm),1);
     next_graph = 0;
     for i=1:length(adjm)

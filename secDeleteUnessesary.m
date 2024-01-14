@@ -1,5 +1,4 @@
 function new_shapefile = secDeleteUnessesary(shapefile)
-%DELETE_UNESSESARY Summary of this function goes here
-%   Detailed explanation goes here
+%SECDELETEUNNECESSARY Deletes now unnecessary columns after further processing
 new_shapefile = rmfield(shapefile,{'Lanes','RoadName'});
 end

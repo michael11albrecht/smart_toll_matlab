@@ -1,6 +1,7 @@
 function [hw_shapefile,shapefile] = filterHighway(shapefile)
-%FILTER_HIGHWAY Summary of this function goes here
-%   Detailed explanation goes here
+%FILTERHIGHWAY Identifies all highways and dual carriageway national roads
+%   Finds adjoining segments to the identified expressways (based on designation)
+%   Creates a separate shapefile for them
 count = 1;
 double_roadnames = {};
 added_segments = [];

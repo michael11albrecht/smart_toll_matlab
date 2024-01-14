@@ -1,6 +1,5 @@
 function [new_basepath, all_files_ok] = getBaseTile(xy_start, xy_dest, tile_size, basepath)
-%GETBASETILE Summary of this function goes here
-%   Detailed explanation goes here
+% GETBASETILE Calculates the required base tile and checks if it exists
     all_files_ok = true;
     
     x_tile = floor(xy_start(1)*(1/tile_size))*tile_size;

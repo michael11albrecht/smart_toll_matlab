@@ -1,6 +1,6 @@
 function tile_list = calcNeededTiles(x_start,y_start,x_dest,y_dest,tile_size)
-%CALC_NEEDED_TILES Summary of this function goes here
-%   Detailed explanation goes here
+% CALCNDEEDTILES Calculates points at the tile's size interval along the straight line
+% Determines the needed tiles to represent all points
 %works with positve coos only
     vz = 1;
     if y_start > y_dest

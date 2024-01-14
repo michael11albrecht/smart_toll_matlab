@@ -1,6 +1,5 @@
 function boundingBox = calcBoundingBox(x_val,y_val)
-%CALCBOUNDINGBOX Summary of this function goes here
-%   Detailed explanation goes here
+%calcs the bounding box of a set of points
     x_min = min(x_val);
     y_min = min(y_val);
     x_max = max(x_val);

@@ -1,6 +1,5 @@
 function new_shapefile = stichTiles(tile_list,tile_path)
-%STICH_TILES Summary of this function goes here
-%   Detailed explanation goes here
+% STICHTILES Loads the required tiles and merges them into one shapefile
     old_segments = [];
     for i = 1:length(tile_list(:,1))
         filepath = sprintf('%s/%d_%d.mat',tile_path,tile_list(i,1),tile_list(i,2));

@@ -1,5 +1,5 @@
 function init(init_address)
-
+%gets run by the gui, creates a tile for the given address and saves it
 basepath = 'Daten';
 
 addpath(genpath(basepath));

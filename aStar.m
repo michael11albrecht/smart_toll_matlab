@@ -1,5 +1,5 @@
 function route = aStar(AdjM,Coos_List,start_kn,end_kn)
-
+% ASTAR Calculates a route from start to end point using the A* algorithm
 closed = false(length(Coos_List));
 open = [start_kn,0,0,0];
 akt_kn = start_kn;

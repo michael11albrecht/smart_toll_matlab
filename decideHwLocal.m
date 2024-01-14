@@ -1,6 +1,7 @@
 function hw_true = decideHwLocal(xy_start,xy_dest,xy_start_ramp,xy_dest_ramp)
-%DECIDEHWLOCAL Summary of this function goes here
-%   Detailed explanation goes here
+% DECIDEHWLOCAL Decides between an expressway route or simple A*
+% The decision is based on the straight-line distance between start/end points and ramps
+% or start and end points
     hw_true = true;
     
     dist_start_dest = (xy_dest(1)-xy_start(1))^2+(xy_dest(2)-xy_start(2))^2;
