@@ -1,23 +1,20 @@
 function init(init_address)
 
- basepath = 'Daten';
- 
- addpath(genpath(basepath));
+basepath = 'Daten';
 
- [lat, lon] = getLatLonAddress(init_address);
- [x,y] = latLon2Lambert(lat, lon);
+addpath(genpath(basepath));
+[lat, lon] = getLatLonAddress(init_address);
+[x,y] = latLon2Lambert(lat, lon);
+shapefile_path = sprintf('%s/shapefile/TRONCON_ROUTE.shp',basepath);
+shapefile = loadCleanShapefile(shapefile_path);
+shapefile = deleteUnessesary(shapefile);
+shapefile = renameItemsAttributes(shapefile);
+%base tile
+folder_name = createTileSpecific(shapefile,100000,basepath,y,x);
 
- shapefile_path = sprintf('%s/shapefile/TRONCON_ROUTE.shp',basepath);
- shapefile = loadCleanShapefile(shapefile_path);
- shapefile = deleteUnessesary(shapefile);
- shapefile = renameItemsAttributes(shapefile);
-
- %base tile
- folder_name = createTileSpecific(shapefile,100000,basepath,y,x);
- 
- new_shapefile_path = sprintf('%s/%s/%s.mat',basepath,folder_name,folder_name);
- shapefile = load(new_shapefile_path);
- shapefile = shapefile.save_tile;
+new_shapefile_path = sprintf('%s/%s/%s.mat',basepath,folder_name,folder_name);
+shapefile = load(new_shapefile_path);
+shapefile = shapefile.save_tile;
 
 [~,shapefile] = filterHighway(shapefile);
 shapefile = secDeleteUnessesary(shapefile);
