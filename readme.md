@@ -4,6 +4,7 @@
 # Smart Toll Application
 
 This application is a MATLAB-based UI tool for initializing and calculating routes on a map segment.
+The final idea behind the project is creating a routing application which takes toll pricing weighted between 0 and 1 into routing calculation. This should close the gap between using avoid tolls and fastest route. For now the application is developed around the french road network.
 
 ## Installation
 
@@ -146,5 +147,9 @@ Please note that the addresses should be within the initialized map segment.
 
 - **lambert2LatLon:**
   - Converts Lambert93 coordinates back to latitude and longitude WGS84.
+
+## Credits
+
+This project was build as part of the course ["Routenplanung" at HM](https://zpa.cs.hm.edu/public/module/305/).
 
 ---
