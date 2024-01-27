@@ -9,6 +9,20 @@ This application is a MATLAB-based UI tool for initializing and calculating rout
 
 To install the application, run the `Smart Toll.mlappinstall` file. This will install the MATLAB app UI on your system.
 
+### Initialize filesystem:
+1. **Add Geoapify api-key**: Get your own [Geoapify api-key](https://www.geoapify.com). Create a `config.env` file containing: ```geoapify_key = your_api_key```
+2. **Add a data folder**: Create a folder called `Daten` containing the folder `shapefile` which contains the shapefile of the [French road-network](https://geoservices.ign.fr/route500#telechargement).
+```
+│
+├── smart_toll_matlab/
+│   ├── ... (other directories and files in the repository)
+│   └── config.env (to be created by the user)
+│
+└── Daten/
+    └── shapefile/
+        └── ... (shapefile data of the French road-network)
+```
+
 ## Usage
 
 1. **Initialize a Map Segment**: In the UI, search for a town in the provided search field and hit the 'Init' button. This runs the [`init`](command:_github.copilot.openSymbolInFile?%5B%22init.m%22%2C%22init%22%5D "init.m") function which initializes the map segment for the specified town.
